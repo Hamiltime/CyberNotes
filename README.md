@@ -1,9 +1,9 @@
-# CyberNotes
+# CyberNotes  
 
-TABLE OF CONTENTS
-* = Still in progress
+TABLE OF CONTENTS  
+* = Still in progress  
 
-##### BLUE TEAM TOOLS #####
+##### BLUE TEAM TOOLS #####  
 -Windows Command Line Forensics*  
 -Linux Command Line Forensics*  
 -DeepBlue*  
@@ -17,7 +17,7 @@ TABLE OF CONTENTS
 
 
 
-##### RED TEAM TOOLS #####
+##### RED TEAM TOOLS #####  
 #Initial Access, Recon and Exploitation#  
 -NMAP*  
 -Hydra*  
@@ -31,13 +31,13 @@ TABLE OF CONTENTS
 -Responder*  
 -Hashcat*  
 
-#Lateral Movement#
+#Lateral Movement#  
 -Native Windows Tools*  
 -Native Linux Tools*  
 -Impacket*  
 -SSH Pivots/Port Forwarding Relays*  
 
-#Domain Attacks#
+#Domain Attacks#  
 -Kerberoasting*  
 -AD CS Attacks*  
 -NTDS.dit Extraction*  
