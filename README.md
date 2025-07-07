@@ -1,7 +1,7 @@
 # CyberNotes  
 
 TABLE OF CONTENTS  
-* = Still in progress  
+Still in progress = *
 
 ##### BLUE TEAM TOOLS #####  
 -Windows Command Line Forensics*  
