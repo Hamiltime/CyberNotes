@@ -1,0 +1,43 @@
+
+
+#####EZTools MFTECmd#####
+-Tool that looks at MFT and finds past file and directory activity
+
+#Download Get-ZimmermanTools: https://ericzimmerman.github.io/#!index.md (May require .net runtime: https://dotnet.microsoft.com/en-us/download/dotnet/9.0 )
+Open a PowerShell window as administrator
+Allow script execution by running command “Set-ExecutionPolicy Unrestricted”
+cd .\Get-ZimmermanTools\
+.\Get-ZimmermanTools.ps1
+
+#Copy EZTools folder to suspect machine
+Open command prompt as administrator
+run MFTECmd.exe -f C:\$MFT --csv c:\temp (or anywhere else)
+Launch TimelineExplorer.exe
+file - Open - select CSV
+Sort on Created0x10(first execution) or Last Modified0x10(most recent execution) column (UTC time, +5 hours to central)
+Look at "File Name" column: filter ".exe", look at .pf(prefetch) files directly after the malicious exe (cmd.exe? wmic? ipconfig? systeminfo?)
+	-Lots of noise, use filters
+
+Tips:
+	Hide x30 date columns
+	Tag items of interest while reviewing, so you can filter by them later
+	Drag column to top for grouping
+	Search options allows search to be a filter or "find"
+
+
+
+#####EZTools PECmd.exe#####
+-Local Files Prefetch -Windows stores prefetch files at: C:\windows\prefetch
+-More evidence of exe execution locally
+Prefetch files contain the following data (In recent Windows 10):
+The last 8 times the binary was run
+The number of times the binary was run
+The binary name
+The file size
+
+run PECmd.exe -d C:\windows\prefetch --csv c:\temp (or anywhere else)
+Launch TimelineExplorer.exe
+file - Open - select CSV
+"Files Loaded" column shows .dll files
+Note: can do single prefetch files with: run PECmd.exe -f C:\windows\prefetch --csv c:\temp
+Extra notes: https://docs.velociraptor.app/docs/forensic/evidence_of_execution/
