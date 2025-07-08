@@ -16,7 +16,7 @@ peframe <FileName>
 pecheck <FileName>
 
 #We can collect strings as well from the exe
-pestr sample.exe
+pestr <FileName>
 
 #TrID is a tool for identifying file types based on their binary signatures.
 trid <FileName> -v
