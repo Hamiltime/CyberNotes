@@ -4,14 +4,12 @@ TABLE OF CONTENTS
 Still in progress = *
 
 ##### BLUE TEAM TOOLS #####  
--Windows Command Line Forensics*  
--Linux Command Line Forensics*  
--DeepBlue*  
+-DeepBlueCLI*
+-Windows Basic Threat Hunting*  
+-Linux Basic Threat Hunting*  
 -AutoRuns*  
 -EXE Analysis*  
 -EZTools File and Prefetch Forensics*  
--IIS Logging*  
--Apache Logging*  
 
 
 
