@@ -1,0 +1,26 @@
+#####Windows Basic Command Line Threat Hunting#####
+Start with network connections and go from there
+
+netstat -anob
+List connections and process ID/executable. Look for ESTABLISHED
+
+netstat -f
+Show resolved domains in connections
+
+tasklist /svc
+All executables and services associated - find what that svchost.exe actually is
+
+tasklist /m
+All executables and the .dll files associated
+
+tasklist /m <name>.dll 
+list all executables that are running a specific .dll files
+
+tasklist /m /fi "pid eq <PID>"
+List all .dll files for a specific executable
+
+wmic process where processid=<PID> get commandline
+Get command line that launched the process
+
+wmic process get name,parentprocessid,processid | find "<PID>"
+See what spawned the process
