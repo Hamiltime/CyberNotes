@@ -4,16 +4,12 @@ TABLE OF CONTENTS
 Still in progress = *
 
 ##### BLUE TEAM TOOLS #####  
--DeepBlueCLI*
--Windows Basic Threat Hunting*  
--Linux Basic Threat Hunting*  
+-DeepBlueCLI  
+-Linux Basic Threat Hunting  
+-MFT File and Prefetch Forensics  
+-Windows Basic Threat Hunting  
 -AutoRuns*  
 -EXE Analysis*  
--EZTools File and Prefetch Forensics*  
-
-
-
-
 
 ##### RED TEAM TOOLS #####  
 #Initial Access, Recon and Exploitation#  
