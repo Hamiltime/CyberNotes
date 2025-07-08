@@ -50,10 +50,6 @@ ext4magic → List/recover deleted files
 
 /etc/cron* /var/cron* /etc/at* → Linux scheduler
 
-
-
-
-
 ####LINUX LOGS####
 /var/log/messages → Contains global system messages, including the messages that are logged during system startup
 /var/log/auth.log → Authentication logs
