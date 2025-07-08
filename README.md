@@ -7,9 +7,9 @@ Still in progress = *
 -DeepBlueCLI  
 -Linux Basic Threat Hunting  
 -MFT File and Prefetch Forensics  
+-REMnux EXE Analysis  
 -Windows Basic Threat Hunting  
 -AutoRuns*  
--EXE Analysis*  
 
 ##### RED TEAM TOOLS #####  
 #Initial Access, Recon and Exploitation#  
