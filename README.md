@@ -4,12 +4,12 @@ TABLE OF CONTENTS
 Still in progress = *
 
 ##### BLUE TEAM TOOLS #####  
+-AutoRuns  
 -DeepBlueCLI  
 -Linux Basic Threat Hunting  
 -MFT File and Prefetch Forensics  
 -REMnux EXE Analysis  
 -Windows Basic Threat Hunting  
--AutoRuns*  
 
 ##### RED TEAM TOOLS #####  
 #Initial Access, Recon and Exploitation#  
