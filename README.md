@@ -5,7 +5,7 @@ Still in progress = *
 
 ##### BLUE TEAM TOOLS #####  
 -AutoRuns  
--Basic Memory Forensics (Volatility)
+-Basic Memory Forensics (Volatility)  
 -DeepBlueCLI  
 -Linux Basic Threat Hunting  
 -MFT File and Prefetch Forensics  
