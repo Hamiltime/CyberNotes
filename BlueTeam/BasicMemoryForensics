@@ -1,0 +1,41 @@
+
+
+#Create memory capture file. This can either be done with the hypervisor or by using FTK Imager.
+Usually you create a snapshop of the VM and ensure memory is captured. 
+Hypervisor formats:
+VMware — .vmem file
+Hyper-V — .bin file
+Parallels — .mem file
+VirtualBox — .sav file *This is only a partial memory file.
+
+#If a hypervisor is unavailable, then you can use FTK Imager (Free but you have to give your name and email in a form) to capture the memory to a .mem extension file:
+https://www.exterro.com/digital-forensics-software/ftk-imager
+Initiate Memory Capture: In FTK Imager, go to File -> Capture Memory.
+Set Destination and Options: Specify the destination path and filename for the memory dump file (usually with a .mem extension or similar). You have options to:
+Include pagefile.sys: This captures the Windows page file, which can contain memory swapped out to disk. This increases the capture size but can hold valuable data.
+Create AD1 file: This saves the memory dump within an AccessData-specific container format (AD1), which might be required if you plan to use other AccessData tools for analysis. Otherwise, the raw memory dump is usually sufficient for tools like Volatility.
+Capture: Click the “Capture Memory” button. The process is typically quite fast.
+
+#Use Volatility to examine contents of the memory file
+# https://github.com/volatilityfoundation/volatility3
+
+
+###Using Volatility###
+
+#Navigate to the volatility directory
+cd /opt/volatility3-1.0.0 (or whatever the version of volatility)
+
+#Examine memory that have read, write, and execute privileges
+python3 vol.py -f ./<FileName>.vmem windows.malfind.Malfind
+
+#Examine network connections
+python3 vol.py -f ./<FileName>.vmem windows.netscan
+
+#Processes on the system
+python3 vol.py -f ./<FileName>.vmem windows.pslist
+
+#More detail on what spawned what process
+python3 vol.py -f ./<FileName>.vmem windows.pstree
+
+#Look at dll's associated with a specific process
+python3 vol.py -f ./<FileName>.vmem dlllist --pid <PID>
