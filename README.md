@@ -28,7 +28,7 @@ Still in progress = *
 
 #Lateral Movement#  
 -Native Windows Tools*  
--Native Linux Tools*  
+-Native Linux Tools  
 -Impacket*  
 -SSH Pivots/Port Forwarding Relays*  
 
