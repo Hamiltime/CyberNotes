@@ -24,7 +24,6 @@ set
 
 Is there a printer?
 lpstat -a
-Applications & Services
 
 What services are running? Which service has which user privilege?
 ps aux
@@ -75,7 +74,6 @@ grep -i user [filename]
 grep -i pass [filename]
 grep -C 5 "password" [filename]
 find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"   # Joomla
-Communications & Networking
 
 What NIC(s) does the system have? Is it connected to another network?
 /sbin/ifconfig -a
@@ -134,7 +132,6 @@ mknod backpipe p ; nc -l -p 8080 0 & < backpipe | tee -a inflow | nc localhost 8
 Is tunnelling possible? Send commands locally, remotely
 ssh -D 127.0.0.1:9050 -N [username]@[ip]
 proxychains ifconfig
-Confidential Information & Users
 
 Who are you? Who is logged in? Who has been logged in? Who else is there? Who can do what?
 id
@@ -191,7 +188,6 @@ cat /etc/ssh/ssh_host_rsa_key.pub
 cat /etc/ssh/ssh_host_rsa_key
 cat /etc/ssh/ssh_host_key.pub
 cat /etc/ssh/ssh_host_key
-File Systems
 
 Which configuration files can be written in /etc/? Able to reconfigure a service?
 ls -aRl /etc/ | awk '$1 ~ /^.*w.*/' 2>/dev/null     # Anyone
@@ -292,7 +288,6 @@ find / \( -perm -o w -perm -o x \) -type d 2>/dev/null   # world-writeable & exe
 Any "problem" files? Word-writeable, "nobody" files
 find / -xdev -type d \( -perm -0002 -a ! -perm -1000 \) -print   # world-writeable files
 find /dir -xdev \( -nouser -o -nogroup \) -print   # Noowner files
-Preparation & Finding Exploit Code
 
 What development tools/languages are installed/supported?
 find / -name perl*
