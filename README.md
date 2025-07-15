@@ -15,7 +15,7 @@ Still in progress = *
 ##### RED TEAM TOOLS #####  
 #Initial Access, Recon and Exploitation#  
 -NMAP*  
--Recon-ng
+-Recon-ng  
 -Hydra*  
 -Metasploit*  
 -Sliver and Teammates*  
