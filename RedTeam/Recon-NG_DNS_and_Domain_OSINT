@@ -1,0 +1,91 @@
+#recon-ng is a tool that retrieves and analyzes DNS records. 
+#Can search: IP address block and domain names
+
+#Preinstalled in Kali and can be updated with:
+apt-get update && apt-get install recon-ng
+
+#Install otherwise
+git clone https://github.com/lanmaster53/recon-ng.git
+cd recon-ng
+pip install -r REQUIREMENTS
+
+#Launch recon-ng
+sudo recon-ng --no-check
+
+#Built in commands
+#Show used to see sub-commands
+show
+#Show used to see sub-command options
+show <sub-command>
+
+#Show all modules in marketplace
+marketplace search
+marketplace search <searchTerm>
+#Install module
+marketplace install <module>
+modules load <module>
+#Help when module is loaded
+help
+
+
+
+#####USAGE#####
+#recon-ng Setup
+#Setup variables
+show options
+show schema
+#Set this to targets DNS server, then verify
+set NAMESERVER <ip address>
+show options
+#Setup modules
+show modules
+#search module e.g. "search resolve" for the resolve module
+search <term>
+#load module
+use <module path> #e.g.: use recon/netblocks-hosts/reverse_resolve
+show info
+
+###SEARCH DOMAIN FOR SUB DOMAINS AND IP ADDRESSES###
+marketplace install hackertarget
+modules load hackertarget
+help
+show options
+options set SOURCE <DOMAIN> #e.g.: tesla.com
+info
+input
+run
+show hosts #List hosts and IPs of sub domains
+
+###SEARCH FOR PTR RECORDS IN AN IP BLOCK###
+#You can add the network block of the target to the options
+add netblocks <IP CIDR RANGE> 
+show netblocks
+e.g.: add netblocks 10.10.10.0/24
+
+#Run the reverse_resolve module against the net block
+run
+#This will return PTR records of that block, which may show antivirus or other interesting records
+
+#These are automatically added to the hosts table
+show hosts
+
+#Exit module and run the cache_snoop module and look at the options
+back
+use discovery/info_disclosure/cache_snoop
+show options
+
+#re-enter the DNS server to this module
+set NAMESERVER <IP> #e.g.: set NAMESERVER 10.10.10.60
+
+#run the module to find DNS server cache
+run
+
+#We can clear the cache when finished using the tool
+sudo rm -rf .recon-ng/
+
+
+
+
+
+
+
