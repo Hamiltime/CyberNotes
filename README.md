@@ -2,6 +2,7 @@
 
 TABLE OF CONTENTS  
 Still in progress = *
+Not Started = ^
 
 ##### BLUE TEAM TOOLS #####  
 -AutoRuns  
@@ -16,29 +17,29 @@ Still in progress = *
 #Initial Access, Recon and Exploitation#  
 -NMAP*  
 -Recon-ng  
--Hydra*  
--Metasploit*  
--Sliver and Teammates*  
--Seatbelt - Gather Windows Information*  
+-Hydra^  
+-Metasploit^  
+-Sliver and Teammates^  
+-Seatbelt - Gather Windows Information^  
 
 #Privilege Escalation#  
--BloodHound*  
--Mimikatz*  
--Responder*  
--Hashcat*  
+-BloodHound^  
+-Mimikatz^  
+-Responder^  
+-Hashcat^  
 
 #Lateral Movement#  
--Native Windows Tools*  
+-Native Windows Tools^  
 -Native Linux Tools  
--Impacket*  
--SSH Pivots/Port Forwarding Relays*  
+-Impacket^  
+-SSH Pivots/Port Forwarding Relays^  
 
 #Domain Attacks#  
--Kerberoasting*  
--AD CS Attacks*  
--NTDS.dit Extraction*  
--Golden and Silver tickets*  
--Skeleton Key, Over-Pass-the-Hash, and Pass-the-Ticket*  
--Domain Privilege Escalation*  
+-Kerberoasting^  
+-AD CS Attacks^  
+-NTDS.dit Extraction^  
+-Golden and Silver tickets^  
+-Skeleton Key, Over-Pass-the-Hash, and Pass-the-Ticket^  
+-Domain Privilege Escalation^  
 
 
