@@ -5,7 +5,7 @@ Still in progress = *
 Not Started = ^
 
 ##### BLUE TEAM TOOLS #####  
-1 AutoRuns                                  Analyze a Windows endpoint for malware or persistence  
+1 AutoRuns   #                                  Analyze a Windows endpoint for malware or persistence  
 2 Basic Memory Forensics              Analyze memory with Volatility  
 3 DeepBlueCLI                         Automatically search Windows event logs for suspicious or malicious events  
 4 Linux Basic Threat Hunting          Command line tips and what to look for  
