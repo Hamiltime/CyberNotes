@@ -16,24 +16,24 @@ Not Started = ^
 
 ##### RED TEAM TOOLS #####  
 #Initial Access, Recon and Exploitation#  
-1 NMAP*  
-2 Recon-ng  
-3 Hydra^  
-4 Metasploit*  
-5 Sliver and Teammates^  
-6 Seatbelt - Gather Windows Information^  
+1 NMAP*                                                     #Network discovery
+2 Recon-ng                                                  #Domain and DNS OSINT, enhanced WHOIS
+3 Hydra^                                                    #Parallelized network login cracker
+4 Metasploit*                                               #Exploit execution
+5 Sliver^                                                   #C2 framework
+6 Seatbelt^                                                 #Gather local windows information  
 
 #Privilege Escalation#  
-7 BloodHound^  
-8 Mimikatz^  
-9 Responder^  
-10 Hashcat^  
+7 BloodHound^                                               #Active directory discovery tool
+8 Mimikatz^                                                 #Memory exploit, gather passwords
+9 Responder^                                                #LLMNR, NT-NS and MDNS poisoning
+10 Hashcat^                                                 #Password hash cracker
 
 #Lateral Movement#  
-11 Native Windows Tools^  
-12 Native Linux Tools  
-13 Impacket^  
-14 SSH Pivots/Port Forwarding Relays^  
+11 Native Windows Tools^                                    #Local tools used for pen testing
+12 Native Linux Tools                                       #Local tools used for pen testing
+13 Impacket^                                                #Python scripts for many things eg. kerberoasting
+14 Pivots/Port Forwarding Relays^                           #How to pivot
 
 #Domain Attacks#  
 15 Kerberoasting^  
