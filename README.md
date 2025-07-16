@@ -5,14 +5,15 @@ Still in progress = *
 Not Started = ^
 
 ##### BLUE TEAM TOOLS #####  
--AutoRuns - Analyse a Windows endpoint for malware or persistence  
--Basic Memory Forensics (Volatility)  
--DeepBlueCLI - Automatically search Windows event logs for suspicious or malicious events  
--Linux Basic Threat Hunting - Command line tips and what to look for  
--MFT File and Prefetch Forensics - Analyze recent file changes or deleted files  
--PowerDecode - Decode obfuscated powershell scripts  
--REMnux EXE and File Analysis - Analyze any file (.exe, .doc, etc)  
--Windows Basic Threat Hunting - Command line tips and what to look for  
+-AutoRuns                            Analyze a Windows endpoint for malware or persistence  
+-Basic Memory Forensics              Analyze memory with Volatility  
+-DeepBlueCLI                         Automatically search Windows event logs for suspicious or malicious events  
+-Linux Basic Threat Hunting          Command line tips and what to look for  
+-MFT File and Prefetch Forensics     Analyze recent file changes or deleted files  
+-PowerDecode                         Decode obfuscated powershell scripts  
+-REMnux EXE and File Analysis        Analyze any file (.exe, .doc, etc)  
+-Windows Basic Threat Hunting        Command line tips and what to look for  
+
 
 ##### RED TEAM TOOLS #####  
 #Initial Access, Recon and Exploitation#  
