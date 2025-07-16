@@ -1,9 +1,7 @@
 <pre>
-# CyberNotes  
-
 TABLE OF CONTENTS  
-Still in progress = *
-Not Started = ^
+Still in progress = *  
+Not Started = ^  
 
 ##### BLUE TEAM TOOLS #####  
 
