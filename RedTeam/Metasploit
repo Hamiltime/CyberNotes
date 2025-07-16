@@ -1,0 +1,102 @@
+#####INSTALLATION#####
+
+
+#####RUN AND UPDATE#####
+COMMAND                      EXPLANATION
+msfconsole                   Launch the program
+version                      Display current version
+msfupdate                    Pull the weekly update
+makerc <File.rc>             Saves recent command to file
+msfconsole -r <File.rc>      Loads recent commands resource file
+sessions -l                  List all sessions
+sessions -i <ID>             Interact/attach to session
+background                   Detach from session
+<Linux commands>             Many linux commands work in msfconsole like ifconfig, nmap, etc
+
+#Use the database to save all results
+service postgresql start     Start the database within Metasploit
+msfdb init                   Initialize the database
+db_status                    Should say connected
+hosts                        Show hosts in database
+services                     Show ports in database
+vulns                        Show all vulnerabilities found
+
+#Workspaces are basically sub-databases
+workspace -h                 Help
+workspace                    List all workspaces
+workspace -a                 Add a workspace
+workspace -d                 Delete a workspace
+workspace -r                 Rename a workspace
+
+#####FIND AND RUN AN EXPLOIT#####
+#Do initial information gathering with db_map and auxiliary modules
+COMMAND                                 EXPLANATION
+db_map -sS -A 192.168.1.100             Example of using db_map, port scan and OS fingerprint and adds results to database
+
+show auxiliary                          Show all auxiliary modules (scanners, fuzzers, proxies, etc)
+use auxiliary/scanner/smb/smb_version   Example, detect SMB version in use
+use auxiliary/scanner/ftp/anonymous     Example, scan for anonymous FTP servers
+use auxiliary/scanner/snmp/snmp_login   Example, scan for public SNMP strings
+
+#Executing an exploit
+COMMAND                                 EXPLANATION
+use <MODULE>                            Set the exploit/module to use
+set payload <PAYLOAD>                   Set the payload
+show options                            Show all the options in the module, differs between modules
+set <OPTION> <SETTING>                  Set a setting, differs between modules
+exploit                                 Runs the exploit, can also use "run"
+
+#####METERPRETER COMMANDS#####
+#General commands
+COMMAND                                 EXPLANATION
+sysinfo                                 Show system info
+ps                                      Show running processes
+kill <PID>                              Terminate a process
+getuid                                  Show your user ID
+upload/download                         Upload/download a file
+pwd / lpwd                              Print working directory
+cd / lcd                                Change directory
+cat                                     Show contents of a file
+edit <FILE>                             Edit a file (vim)
+shell                                   Drop into a shell
+migrate <PID>                           Switch to another process
+hashdump                                Show all password hashes -Windows only
+idletime                                Display idle time of user
+screenshot                              Take a screenshot
+clearev                                 Clear the logs
+
+#Escalate Privileges
+use priv                                Load the script to elevate privileges
+getsystem                               Execute and elevate your privileges
+getprivs                                Execute and elevate your privileges
+
+#Token Stealing (Windows only)
+use incognito                           Load the script to steal tokens
+list_tokens -u                          Show all tokens
+impersonate_token DOMAIN\\USER          Use token
+drop_token                              Stop using token
+
+#Port Forwarding and Pivoting
+COMMAND                                                                     EXPLANATION
+meterpreter> portfwd [ADD|DELETE] -L <LHOST> -l 3388 -r <RHOST> -p 3389     Within meterpreter, enable port forwarding, opens port 3388 locally with forwards all traffic to 3389 on the remote host
+msf> route add <SUBNET> <MASK> <SESSIONID>                                  Within MSF console, pivot through a session by adding a route, allows you to exploit or scan adjacent hosts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
