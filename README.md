@@ -12,7 +12,7 @@ Not Started = ^
 3 DeepBlueCLI                                               #Automatically search Windows event logs for suspicious or malicious events  
 4 AutoRuns                                                  #Analyze a Windows endpoint for malware or persistence  
 5 PowerDecode                                               #Decode obfuscated powershell scripts  
-6 REMnux EXE and File Analysis                              #Analyze any file (.exe, .doc, etc)  
+6 REMnux File Analysis                                      #Analyze any file (.exe, .doc, etc)  
 7 MFT File and Prefetch Forensics                           #Analyze recent file changes or deleted files  
 8 Basic Memory Forensics                                    #Analyze memory with Volatility  
 
