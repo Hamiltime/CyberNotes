@@ -19,7 +19,7 @@ Not Started = ^
 -NMAP*  
 -Recon-ng  
 -Hydra^  
--Metasploit^  
+-Metasploit*  
 -Sliver and Teammates^  
 -Seatbelt - Gather Windows Information^  
 
