@@ -22,7 +22,7 @@ Not Started = ^
 4 Metasploit*                                               #Exploit execution
 5 Sliver^                                                   #C2 framework
 6 Seatbelt^                                                 #Gather local windows information  
-  CrackMapExec^                                             #Enumerate users, shares, hashes, and more in Windows/Active Directory environments.
+  CrackMapExec^                                             #Enumerate users, shares, hashes in Windows/Active Directory
   
 #Privilege Escalation#  
 7 BloodHound^                                               #Active directory discovery tool
