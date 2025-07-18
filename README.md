@@ -22,7 +22,8 @@ Not Started = ^
 4 Metasploit*                                               #Exploit execution
 5 Sliver^                                                   #C2 framework
 6 Seatbelt^                                                 #Gather local windows information  
-
+  CrackMapExec^                                             #Enumerate users, shares, hashes, and more in Windows/Active Directory environments.
+  
 #Privilege Escalation#  
 7 BloodHound^                                               #Active directory discovery tool
 8 Mimikatz^                                                 #Memory exploit, gather passwords
