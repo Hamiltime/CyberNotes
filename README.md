@@ -7,7 +7,7 @@ Not Started = ^
 
 1 Windows Basic Threat Hunting                              #Command line tips and what to look for  
 2 Linux Basic Threat Hunting                                #Command line tips and what to look for  
-3 DeepBlueCLI                                               #Automatically search Windows event logs for suspicious or malicious events  
+3 DeepBlueCLI                                               #Search Windows event logs for suspicious or malicious events  
 4 AutoRuns                                                  #Analyze a Windows endpoint for malware or persistence  
 5 PowerDecode                                               #Decode obfuscated powershell scripts  
 6 REMnux File Analysis                                      #Analyze any file (.exe, .doc, etc)  
